@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CHAINSCOPE - Local Web3 Lab</title>
+  <style>
+    body {
+      background-color: #0d1117;
+      color: #c9d1d9;
+      font-family: sans-serif;
+      padding: 20px;
+      line-height: 1.6;
+    }
+    .card {
+      background: #161b22;
+      border: 1px solid #30363d;
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+    h1, h2 { color: #4ade80; }
+    #readme-content {
+      margin-top: 15px;
+      padding-top: 15px;
+      border-top: 1px solid #30363d;
+    }
+  </style>
+  <!-- ดึง Marked.js เพื่อแปลง README เป็น HTML แสดงผล -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+
+  <div class="card">
+    <h1>🛡️ CHAINSCOPE (Local Web3 Lab)</h1>
+    <p>เข้าใจ Smart Contract ก่อนส่งขึ้นเชนจริง</p>
+  </div>
+
+  <div class="card">
+    <h2>หลักการและแนวคิดโครงการ (Project Philosophy)</h2>
+    <div id="readme-content">กำลังโหลดข้อมูลจาก GitHub...</div>
+  </div>
+
+  <script>
+    // ดึงไฟล์ README.md จาก GitHub มาแสดงผลอัตโนมัติ
+    async function loadReadme() {
+      try {
+        const res = await fetch('https://raw.githubusercontent.com/rbeer789/chainscope-/main/README.md');
+        const text = await res.text();
+        document.getElementById('readme-content').innerHTML = marked.parse(text);
+      } catch (e) {
+        document.getElementById('readme-content').innerHTML = 'ไม่สามารถโหลดข้อมูล README ได้';
+      }
+    }
+    loadReadme();
+  </script>
+
+</body>
+</html>
