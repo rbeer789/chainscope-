@@ -33,5 +33,5 @@ CHAINSCOPE เป็นเครื่องมือ Interactive Sandbox ที
 
 ผู้พัฒนา: **rbeer789**  
 - **GitHub Repository:** [github.com/rbeer789](https://github.com/rbeer789)
-- **Live Demo:** `veritrustr.netlify.app`
+- **Live Demo:** `chainscope-lab.netlify.app`
 
