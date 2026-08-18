@@ -35,3 +35,4 @@ CHAINSCOPE เป็นเครื่องมือ Interactive Sandbox ที
 - **GitHub Repository:** [github.com/rbeer789](https://github.com/rbeer789)
 - **Live Demo:** `chainscope-lab.netlify.app`
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/8b9d93f1-34bd-4ec0-b793-69849bc733de/deploy-status)](https://app.netlify.com/projects/chainscope-lab/deploys)
